@@ -1,0 +1,297 @@
+@charset="UTF-8"
+
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+@font-face { /*permite definir tipo de letra geralmente para titulos especificos*/
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+	
+}
+
+p {
+
+	text-align: justify;
+	text-indent: 50px; /*espaço da margem do paragrafo*/
+
+}
+
+body {
+
+	background-image: url("_imagens/galeria-01.jpg");
+	color: black;
+	background-color: #dddddd; /* Cor de fundo do corpo */
+	font-family: arial, sans-serif; /* formatação letra de todo o conteudo dentro do bady */
+}
+
+a { /*formatação de todo o texto linkado*/
+	color: #606060;
+	text-decoration: none; /*none significa que nao haverá alteração*/
+
+}
+
+a:hover { /* alteração do texto somente ao passar o mouse sobre a palavra*/	
+	text-decoration: underline; /*sublinhado abaixo*/
+
+}
+
+/* Inicio Formatação da Interface*/
+
+div#interface {
+	width: auto; /*largura da tela dentro do navegador*/
+	background-color: #ffffff; /*cor de fundo do container*/
+	margin: -40px auto 40px auto; /*margem da area externa docontainer de interface, valores direita e esquerda como auto - automaticamente navegador centraliza o container*/
+	box-shadow: 0px 0px 10px rgba (0,0,0,.5); /*sombreament0*/
+	padding: 15px; /*margem da area interna do container, se valores iguais informar somente 1 vez*/
+}
+
+/* Formataçaõ da imagem icone*/
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 1100px;
+	top: 50px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid; /* largura da borda, cor e estilo*/
+	height: 150px; /*altura da area destinada ao cabecalho, a borda será aplicada após este tamanho solicitado*/
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px; /*endereço da imagem, não repetir, posição do objeto deslocamento lateral e vertical*/
+
+}
+
+header#cabecalho h1 { /*formataççao do titulo de cabecalho*/
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 { /*formataççao do titulo de cabecalho*/
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	color: #CCCCCC;
+	padding: 0px;
+	margin-top: 0px;
+
+}
+
+/*Formatação de imagens com legendas*/
+
+
+.foto-legenda {
+	position: relative; /* Tag pai sempre deve ter position relative para que os filhos tenham posição dentro do container e não fora */
+	border: 8px solid white; /* largura borda, tipo e cor */
+	box-shadow: 1px 1px 4px black; /*sombreamento, desl horizontal, desl vertical, espelhamento e cor */
+	
+}
+
+.foto-legenda img {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+/*figcaption filho do container figure*/
+
+.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute; /*objeto passa por cima de outros elementos dentro site~, não somente do container*/
+	top: 0px; /*topo do container, pois o pai é relativo */
+	background-color: rgba(0,0,0,.4); 
+	color: white;
+	width: 100% /*largura*/
+	height:100%; /* altura */
+	padding: 10px; /* margem dentro do objeto*/
+	box-sizing: border-box; /* cria um box dentro da borda*/
+	transition: opacity 3s; /*tempo para aparecer ou esconder efeito */ 
+}
+
+	/*rgba com transparencia */
+
+.foto-legenda:hover figcaption { /* :hover permite que classes com opacidade 0 aparecem qd passar o mouse por cima*/
+	opacity: 1;
+
+}
+
+/* Formatação Menu */
+
+nav#menu { /* refere-se ao container todo*/
+	display: block; /* bloco pode se movimentar dentro do site*/
+
+}
+
+nav#menu ol {
+	list-style: none; /* retira os icones de lista*/
+	text-transform: uppercase; /* transforma em letras maiusculas*/
+	position: absolute; /* objeto flutua pelo site*/
+	top: -10px; /*numero negativo cobre a margem padrao do navergador*/
+	left: 700px;
+}
+
+nav#menu li {
+	display: inline-block; /* alinha os itens do li lado a lado*/
+	background-color: #dddddd; /* cor de fundo*/
+	padding: 10px; /* margem dentro do objeto*/
+	margin: 2px; /*  margem fora do objeto*/
+	transition: background-color 1s; /*tempo para mudança da cor referente ao:hover*/
+
+
+}
+
+nav#menu h1 {
+	display: none; /* oculta o titulo do h1 somnete no site, ele continua no código*/
+
+}
+
+nav#menu li:hover { /*altera quando o mouse é passado por cima*/
+	background-color: #606060;
+}
+
+nav#menu a { /*formatar todos os ítens linkados dentro da ancora*/
+	color: #000000;
+	text-decoration-line: none;
+
+}
+
+nav#menu a:hover { /*altera quando o mouse é passado por cima*/
+	color: white; /*altera cor letra*/
+	text-decoration-line: underline; /*inseri sublinhado na palavra / none retira sub e over inseri sub acima */
+
+}
+
+section#corpo {
+	display: block; /*formatar em bloco*/
+	width: 800px; /*largura do bloco*/
+	float: left; /*para flutuar ao lado esquerdo*/
+	border-right: 1px solid #606060; /*borda do lado direito do elemento (largura tipo e cor)*/
+	padding-right: 15px; /*configuar o padding para a borda não ficar colada nas letras*/
+
+}
+
+article#noticia-principal h2 { /*tag utilizada para artigos de noticias*/
+	font-size: 15px; /* tamanho letra*/
+	color: #606060; /*cor da letra cinza escuro*/
+	background-color: #dddddd; /* cor de fundo cinza claro*/
+	padding: 30px, 25px, 30px, 25px;
+	margin: 15px, 0px, 15px, 0px;
+
+}
+
+header#cabecalho-artigo h1 { /*formatar cabecalho da tag article*/
+	font-family: 'FonteLogo', sans-serif; /*font-family permite a utlização de tipo da fonte exportada*/
+	font-size: 30px;
+	color: #606060;
+	margin-bottom: 0px; /*espaço margem parte de baixo*/
+	margin-top: 0px;
+
+
+}
+
+header#cabecalho-artigo h2 { /*formatar cabecalho da tag article*/
+	font-size: 20px; /*tamanho fonte*/
+	color: #cecece; /* cor fonte cinza bem claro*/
+	background-color: #ffffff; /*cor fund0*/
+	margin: 0px; /*margem externa*/
+
+
+}
+
+header#cabecalho-artigo h3 { /*formatar cabecalho da tag article*/
+	font-size: 15px;
+	color: #606060;
+
+}
+
+.direita { /* classe generica para alteração de somente uma frase ou palavra que estava amparado em outra text-align:  */
+	text-align: right; /*configurar texto a direita*/
+}
+
+
+table#tabelaspec {
+	border: 1px solid #606060; /*borda externa*/
+	border-spacing: 0px; /*retira o espaço entre as células*/
+	margin-left: auto; /*centralizar a tabela*/
+	margin-right:auto;
+	text-align: center; /*alinhamento do texto*/
+	
+
+}
+
+table#tabelaspec td {
+	border: 1px solid #606060; /*borda externa*/
+	padding: 10px; /*espaço interno de cada célula*/
+	text-align: left;
+	vertical-align: middle;
+
+}
+
+table#tabelaspec td.ce { /* configurar classe referente a coluna da tabela*/
+	color: #ffffff; /* cor branco*/
+	background: #606060; /*cor cinza escuro*/
+	text-align: right; /*alinhamento a direita*/
+	vertical-align: top; /*serve para as linhas que pertencem a 2 tipos (rowspan) titulo ficará alinhado na primeira linha*/
+	font-weight: bold;
+}
+
+table#tabelaspec td.cd{/* configurar classe referente a coluna da tabela*/
+	background: #cecece; /*cor cinza claro*/
+	text-align: left; /*alinhamento a esquerda*/
+	
+}
+
+table#tabelaspec caption { /* titulo da tabela*/
+	color: #888888; /*cor cinza claro*/
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+table#tabelaspec caption span{ /* configuração de somente parte do titulo da tabela*/
+	display: block; /*para a palavra ficar separada do restante da frase*/
+	float: right; /*flutuar a direita*/
+	color: #000000; /*cor preto*/
+	font-size: 12px; /*tamanho to texto*/
+	margin-top: 10px; /*retira a margem para que a palavra não fique flutuando e sim alinhanda*/
+}
+
+
+aside#lateral {
+	display: block; /*formatar em bloco*/
+	width:425px; /*largura do bloco*/
+	float: right; /*para flutuar ao lado direito*/
+	background-color: #cecece;
+	margin-top: 10px;
+	margin-right: 25px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	padding: 5px;
+}
+
+aside#lateral h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px:;
+	color: #606060;
+
+}
+
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 15px;
+	color: #ffffff; /*cor da fonte branco*/
+	padding: 5px;
+
+}
+
+
+footer#rodape {
+	clear: both; /* serve para limpar a configuração anterior de divisão e insere a informaçao no final após os blocos fora da divisão*/
+	border-top: 1px solid #606060 /* borda na parte superior para separar os blocos */
+}
+
+footer#rodape p {
+	text-align: center; /* centralizar o paragrafo */
+	display: block;
+	font-style: italic;
+}
+

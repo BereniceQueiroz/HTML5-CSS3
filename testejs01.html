@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<script>
+		function acendeLampada () {
+			document.getElementById ("luz").src="_imagens/lampada-acesa.jpg"; /*funçao lê o ID criado no html com o onmousemove*/			
+		}
+
+		function apagaLampada () {
+			document.getElementById ("luz").src="_imagens/lampada-apagada.jpg"; /*funçao lê o ID criado no html com o onmousemout*/
+		}
+
+		function quebraLampada () {
+			document.getElementById ("luz").src="_imagens/lampada-quebrada.jpg"; /*funçao lê o ID criado no html com o onclick*/
+		}
+
+
+	</script>
+
+</head>
+
+<body>
+
+	
+	<h1>Acende lampada</h1>
+
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()" />;
+
+
+</body>

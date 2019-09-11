@@ -1,0 +1,20 @@
+@charset="UTF-8"
+
+section#conteudo { /*confirguração somente da pagina spec*/
+	width: 1000px;
+	margin: auto;
+
+
+}
+
+iframe#frame-spec {
+	width: 480px; /*largura do quadro fa informação adicional*/
+	height: 280px; /*altura do quadro*/
+	border: none; /*none retira a borda*/
+	overflow: hidden; /* formatação de bloco * conteudo do bloco cortado sem apresnetar barra de rolagem*/
+
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+	display: none;
+}

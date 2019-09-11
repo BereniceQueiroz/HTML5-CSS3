@@ -1,0 +1,64 @@
+@charset="UTF-8";
+
+
+form {
+	width: 500px;
+	margin: auto; 
+
+}
+
+input, textarea{
+ 	font-family: sans-serif;
+ 	font-weight: normal;
+ 	font-size: 13pt;
+ 	background: rgba(255,255,255,.8); /*transparencia permite que a figura de baixo não fique apagada*/
+
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+
+}
+
+form {
+	width: 600px;
+	margin: auto; 
+
+}
+
+legend {
+	color: #888888;
+	font-weight: bold; /* negrito, italico ou normal*/
+	font-size: 13pt;
+	font-family: sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin:20px;
+
+}
+
+fieldset#sexo {
+	width: 150px;
+	border-color: #cecece;
+	margin-right: 15px;
+
+}
+
+
+fieldset#usuario {
+	background: url(../_imagens/icone-contato.png) no-repeat 90% 90%; /* porcentagem define a posição onde a imagem irá ficar*/
+}
+
+fieldset#endereço {
+	background: url(../_imagens/icone-endereco.png) no-repeat 90% 90%; /* porcentagem define a posição onde a imagem irá ficar*/
+}
+
+fieldset#mensagem {
+	background: url(../_imagens/icone-mensagem.png) no-repeat 90% 90%; /* porcentagem define a posição onde a imagem irá ficar*/
+}
+
+fieldset#pedido {
+	background: url(../_imagens/icone-pagamento.png) no-repeat 90% 90%; /* porcentagem define a posição onde a imagem irá ficar*/
+}

@@ -1,0 +1,114 @@
+@charset="UTF-8"
+
+ul#album-foto {
+	width: 700px;
+	height: 700px;
+	margin: 0 auto;
+	overflow: hidden; /*bloco sem rolagem*/
+	
+}
+
+ul#album-fotos li {
+	list-style: none; /*lista sem icones*/
+	float: left; /*icones agrupados a esquerda*/
+	width: 280px; /*altura*/
+	height: 280px; /*largura*/
+	margin: 50px; /*margem externa*/
+	padding: 5px; /*borda interna de cada box*/
+	border: 5px solid #ffffff; /*borda de cada li*/
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4); /*configuração de cada bloco*/
+	transition: all .4s ease-in;
+
+}
+
+ul#album-fotos li:hover {
+	transform: scale(1.4); /* tamanho do zoom da img, pode acrescentar inclinação da img com rotate(-15deg) ou skew*/
+
+}
+
+ul#album-fotos li span { /* altera todos os li com tag span*/
+	opacity: 0; /* refere-se  legenda informanda em cada li, com opacidade 0 informação ficou invisivel*/
+	color: #ffffff; /* cor da fonte branco*/
+	text-shadow: 1px 1px 1px #000000; /* sombreamento das letras e cor preto*/
+	background-color: rgba(0,0,0,.3); /* cor de fundo */
+	font-size: 9pt; /*tamanho da fonte*/
+	line-height: 540px; /*espaçamento entrelinha contagem de cima p/ baixo*/
+	padding: 8px; /*espaçamento da cor de fundo*/
+}
+
+ul#album-fotos li:hover span {
+	opacity: 1; /* legenda refernte ao span somente aparece ao mover o mouse sobre a img*/
+}
+
+ul#album-fotos li#foto01 {
+	background-image: url("../_imagens/galeria-01.jpg");
+	background-position: 50%, 50%; /*posição da foto que será mostrada no bloco (centro), vertical, horizontal*/
+	background-size: 400px, 400px; /*tamanho original da img*/
+	background-color: #ffffff; /* cor de fundo da img*/
+}
+
+ul#album-fotos li#foto01:hover {
+	background-position: 0px 0px; /*posição da foto a ser mostrada ao movimentar o mouse*/
+	background-size: 310px 310px; /* tamanho da foto igual ao tamanho determinado no album de fotos*/
+}
+
+ul#album-fotos li#foto02 {
+	background-image: url("../_imagens/galeria-02.jpg");
+	background-position: 50%, 50%; /*posição da foto que será mostrada no bloco (centro), vertical, horizontal*/
+	background-size: 400px, 400px; /*tamanho original da img*/
+	background-color: #ffffff; /* cor de fundo da img*/
+}
+
+ul#album-fotos li#foto02:hover {
+	background-position: 0px 0px; /*posição da foto a ser mostrada ao movimentar o mouse*/
+	background-size: 310px 310px; /* tamanho da foto igual ao tamanho determinado no album de fotos*/
+}
+
+ul#album-fotos li#foto03 {
+	background-image: url("../_imagens/galeria-03.jpg");
+	background-position: 50%, 50%; /*posição da foto que será mostrada no bloco (centro da img), vertical, horizontal*/
+	background-size: 400px, 400px; /*tamanho original da img*/
+	background-color: #ffffff; /* cor de fundo da img*/
+}
+
+ul#album-fotos li#foto03:hover {
+	background-position: 0px 0px; /*posição da foto a ser mostrada ao movimentar o mouse*/
+	background-size: 310px 310px; /* tamanho da foto igual ao tamanho determinado no album de fotos*/
+}
+
+ul#album-fotos li#foto04 {
+	background-image: url("../_imagens/galeria-04.jpg");
+	background-position: 50%, 50%; /*posição da foto que será mostrada no bloco (centro), vertical, horizontal*/
+	background-size: 400px, 400px; /*tamanho original da img*/
+	background-color: #ffffff; /* cor de fundo da img*/
+}
+
+ul#album-fotos li#foto04:hover {
+	background-position: 0px 0px; /*posição da foto a ser mostrada ao movimentar o mouse*/
+	background-size: 310px 310px; /* tamanho da foto igual ao tamanho determinado no album de fotos*/
+}
+
+ul#album-fotos li#foto05 {
+	background-image: url("../_imagens/galeria-05.jpg");
+	background-position: 50%, 50%; /*posição da foto que será mostrada no bloco (centro), vertical, horizontal*/
+	background-size: 400px, 400px; /*tamanho original da img*/
+	background-color: #ffffff; /* cor de fundo da img*/
+}
+
+ul#album-fotos li#foto05:hover {
+	background-position: 0px 0px; /*posição da foto a ser mostrada ao movimentar o mouse*/
+	background-size: 310px 310px; /* tamanho da foto igual ao tamanho determinado no album de fotos*/
+}
+
+ul#album-fotos li#foto06 {
+	background-image: url("../_imagens/galeria-06.jpg");
+	background-position: 50%, 50%; /*posição da foto que será mostrada no bloco (centro), vertical, horizontal*/
+	background-size: 400px, 400px; /*tamanho original da img*/
+	background-color: #ffffff; /* cor de fundo da img*/
+}
+
+ul#album-fotos li#foto06:hover {
+	background-position: 0px 0px; /*posição da foto a ser mostrada ao movimentar o mouse*/
+	background-size: 310px 310px; /* tamanho da foto igual ao tamanho determinado no album de fotos*/
+}
